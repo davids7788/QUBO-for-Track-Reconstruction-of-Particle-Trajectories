@@ -1,0 +1,49 @@
+---
+detector planes:
+  layer 0:
+    x start: 0.05275912
+    x end: 0.55430088
+    y start: -0.00688128
+    y end: 0.00688128
+    z: 3.9560125
+  layer 1:
+    x start: 0.05275912
+    x end: 0.55430088
+    y start: -0.00688128
+    y end: 0.00688128
+    z: 4.0560125
+  layer 2:
+    x start: 0.05275912
+    x end: 0.55430088
+    y start: -0.00688128
+    y end: 0.00688128
+    z: 4.1560125
+  layer 3:
+    x start: 0.05275912
+    x end: 0.55430088
+    y start: -0.00688128
+    y end: 0.00688128
+    z: 4.2560125
+
+doublet criteria:
+  dx/x0 criteria: 0.053
+  dx/x0 criteria epsilon: 0.0015
+  reference layer z: 3.9560125
+
+triplet criteria:
+  angle diff x: 0.001
+  angle diff y: 0.001
+
+settings:
+  number segments per layer: 10
+  constant conflict param: 1.0
+  constant connectivity param: -1.0
+  function conflict: null
+  function connectivity: two norm angle standard deviation
+  qubo mode: "c_con f_ct"
+  constant quality: null
+  quality from angles: True
+  z_scores: False
+  min_max feature scaling: True
+  quality scale range: [-0.1, 0.1]
+  connectivity scale range: [-1.0, -0.9]
